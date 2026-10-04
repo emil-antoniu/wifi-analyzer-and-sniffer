@@ -1,0 +1,4 @@
+https://www.tcpdump.org/pcap.html find device
+https://www.tcpdump.org/manpages/pcap_findalldevs.3pcap.html 
+https://github.com/the-tcpdump-group/libpcap/blob/master/pcap/pcap.h pcap_if struct def line 322
+https://www.tcpdump.org/manpages/pcap_open_live.3pcap.html
