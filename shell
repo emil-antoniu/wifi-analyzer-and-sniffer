@@ -1,3 +1,12 @@
+sudo apt install libpcap-dev
+
 gcc main.c -o analyzer
 gcc main.c -lpcap -o analyzer
 sudo ./analyzer wlp4s0
+
+iw dev
+iw dev wlp4s0 info
+sudo nmcli device set wlp4s0 managed no
+sudo ip link set wlp4s0 down
+sudo iw dev wlp4s0 set type monitor
+sudo ip link set wlp4s0 up

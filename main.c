@@ -16,5 +16,17 @@ int main(int argc, char *argv[])
 		return(2);
 	}
 
+	printf("Layer 2 header: %i\n", pcap_datalink(handle)); // 127
+
+	const u_char *packet;		/* The actual packet */
+	struct pcap_pkthdr header;	/* The header that pcap gives us */
+
+	/* Grab a packet */
+	packet = pcap_next(handle, &header);
+	/* Print its length */
+	printf("Jacked a packet with length of [%d]\n", header.len);
+	/* And close the session */
+	pcap_close(handle);
+
 	return(0);
 }
