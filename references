@@ -2,3 +2,7 @@ https://www.tcpdump.org/pcap.html find device
 https://www.tcpdump.org/manpages/pcap_findalldevs.3pcap.html 
 https://github.com/the-tcpdump-group/libpcap/blob/master/pcap/pcap.h pcap_if struct def line 322
 https://www.tcpdump.org/manpages/pcap_open_live.3pcap.html
+https://superuser.com/questions/1375120/wireless-adapter-is-unable-to-search-for-networks-when-monitor-mode-is-enabled
+https://stackoverflow.com/questions/27107998/pcap-functions-have-undefined-reference
+https://stackoverflow.com/questions/6111479/how-can-i-parse-an-ethernet-packet-using-libpcap
+https://learn.microsoft.com/en-us/windows/win32/api/winsock2/ns-winsock2-in_addr

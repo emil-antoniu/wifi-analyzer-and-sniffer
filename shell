@@ -1,11 +1,9 @@
 sudo apt install libpcap-dev
 
-gcc sniffer.c -o sniffer
-gcc sniffer.c -lpcap -o sniffer
+gcc sniffer.c -o sniffer -lpcap
 sudo ./sniffer wlp4s0
 
-gcc analyzer.c -o analyzer
-gcc analyzer.c -lpcap -o analyzer
+gcc analyzer.c -o analyzer -lpcap
 sudo ./analyzer
 
 iw dev
